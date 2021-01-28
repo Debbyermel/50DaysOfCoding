@@ -1,4 +1,4 @@
-const API_URL;
+const MY_API_URL = API_URL + MY_KEY;
 const IMG_PATH = 'https://image.tmdb.org/t/p/w1280';
 
 const form = document.getElementById('form');
@@ -7,7 +7,7 @@ const main = document.getElementById('main');
 
 
 //Getting inicial movies
-getMovies(API_URL);
+getMovies(MY_API_URL);
 
 async function getMovies(url) {
 
