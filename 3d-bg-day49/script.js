@@ -15,9 +15,7 @@ function createBoxes() {
       `
       boxesContainer.appendChild(box);
     }
-
   }
-
 }
 
 createBoxes();
