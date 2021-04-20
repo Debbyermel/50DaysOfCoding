@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  background-color: #e5c7c9;
+  display: flex;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.panel {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+  justify-content: center;
+  width: auto;
+}
+
+.pricing-plan:not(:last-child) {
+  border-bottom: 1px solid #eab1c9;
+}
+
+.pricing-image {
+  margin-bottom: 25px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.pricing-header {
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #888;
+}
+
+ul > li {
+  list-style: none;
+}
+
+.pricing-feature {
+  margin: 50px 0 25px;
+  color: #eab1c9;
+}
+
+.pricing-feature-item {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 15px 0;
+  border-bottom: 1px solid #eab1c9;
+}
+
+.pricing-price {
+  color: #e5c7c9;
+  display: block;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.pricing-button {
+  border-radius: 10px;
+  border: 1px solid palevioletred;
+  color:palevioletred;
+  display: inline-block;
+  margin: 25px 0;
+  padding: 15px 35px;
+  text-decoration: none;
+  transition: background-color 1s ease-in-out;
+}
+
+.pricing-button:hover,
+.pricing-button:focus {
+  background-color: salmon;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+
+}
+
+.pricing-button.is-featured {
+  background-color: salmon;
+  border: unset;
+  color: #ffffff;
+}
+
+@media (min-width: 900px) {
+  .panel {
+    flex-direction: row;
+  }
+
+  .pricing-plan:not(:last-child) {
+    border-bottom: none;
+    border-right: 1px solid #eab1c9;
+  }
+}
