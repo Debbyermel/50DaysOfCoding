@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+a {
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+nav {
+  top: 0;
+  z-index: 1;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  color: black;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 12.5px 25px 12.5px;
+}
+
+nav li a {
+  background: none;
+  color: #fff;
+  font-family: 'Darker Grotesque', sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+
+header h1 {
+  color: white;
+  font-size: 150px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.plant {
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 150px;
+  transform: rotate(-15deg);
+  width: 300px;
+}
+
+
+.hand {
+  animation: hand 3s infinite;
+  bottom: 0;
+  height: 500px;
+  position: absolute;
+  right: 300px;
+  transform: translateY(50px);
+  z-index: 0;
+}
+
+.plant-background {
+  left: -80px;
+  position: absolute;
+  top: 260px;
+  transform: rotate(-240deg);
+  width: 500px;
+}
+
+.plant-background.bottom {
+  top: 530px;
+  transform: rotate(-170deg);
+}
+
+.plant-background.bottom.right {
+  right: 0;
+  transform: rotate(20deg);
+  left: auto;
+  top: 2000px;
+}
+
+.plant.right {
+  top: 2200px;
+}
+
+@keyframes plant-shadow {
+  50% {
+    margin-top: -10px;
+  }
+}
+
+@keyframes hand {
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes plant-move {
+  50% {
+    margin-top: 10px;
+  }
+}
+
+
+/*truncate text with ellipsis*/
+
+.intro {
+  font-weight: 400;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.centered {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
+
+header {
+  align-items: center;
+  background-attachment: fixed;
+  background-color: #f3b70f;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  justify-content: center;
+  margin-bottom: 50px;
+  position: relative;
+  position: relative;
+  text-align: center;
+}
+
+header span {
+  bottom: 40px;
+  color: #fff;
+  font-size: 12px;
+  position: absolute;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+}
+
