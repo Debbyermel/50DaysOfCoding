@@ -58,7 +58,7 @@ nav li a {
 }
 
 header h1 {
-  color: white;
+  color: #fff;
   font-size: 150px;
   font-weight: 900;
   letter-spacing: 1px;
@@ -99,10 +99,10 @@ header h1 {
 }
 
 .plant-background.bottom.right {
-  right: 0;
-  transform: rotate(20deg);
   left: auto;
+  right: 0;
   top: 2000px;
+  transform: rotate(20deg);
 }
 
 .plant.right {
@@ -126,9 +126,6 @@ header h1 {
     margin-top: 10px;
   }
 }
-
-
-/*truncate text with ellipsis*/
 
 .intro {
   font-weight: 400;
@@ -170,4 +167,3 @@ img {
 ul {
   padding: 0;
 }
-
