@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  justify-content: center;
+  margin: 0;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.container {
+  display: grid;
+  min-height: 400px;
+  place-items: center;
+}
+
+.floating-stack {
+  background: #fea000;
+  border-radius: 1rem;
+  color: #fff;
+  height: 80vh;
+  overflow-y: auto;
+  width: 320px;
+}
+
+.floating-stack > dl {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2.5rem 1fr;
+  margin: 0 0 1rem;
+}
+
+.floating-stack dt {
+  align-items: center;
+  background: #fff;
+  border-radius: 50%;
+  box-sizing: border-box;
+  color: #fea000;
+  display: inline-flex;
+  font-weight: bold;
+  grid-column: 1;
+  height: 2rem;
+  justify-content: center;
+  left: 0.5rem;
+  padding: 0.25rem 1rem;
+  position: sticky;
+  top: 0.5rem;
+  width: 2rem;
+}
+
+.floating-stack dd {
+  grid-column: 2;
+  margin: 0;
+  padding: 0.75rem;
+}
+
+.floating-stack > dl:first-of-type > dd:first-of-type {
+  margin-top: 0.25rem;
+}
