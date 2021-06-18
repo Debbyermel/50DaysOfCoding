@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Boiler</title>
+  </head>
+  <body>
+    <header>
+	<h1 id="brand-name">LikeNuShus</h1>
+	<p class="tagline">Lightly Used Shoes, Cheap!</p>
+	<svg viewBox="0 0 640 512" width="100" title="shoe-logo" id="logo">
+		<path d="M192 160h32V32h-32c-35.35 0-64 28.65-64 64s28.65 64 64 64zM0 416c0 35.35 28.65 64 64 64h32V352H64c-35.35 0-64 28.65-64 64zm337.46-128c-34.91 0-76.16 13.12-104.73 32-24.79 16.38-44.52 32-104.73 32v128l57.53 15.97c26.21 7.28 53.01 13.12 80.31 15.05 32.69 2.31 65.6.67 97.58-6.2C472.9 481.3 512 429.22 512 384c0-64-84.18-96-174.54-96zM491.42 7.19C459.44.32 426.53-1.33 393.84.99c-27.3 1.93-54.1 7.77-80.31 15.04L256 32v128c60.2 0 79.94 15.62 104.73 32 28.57 18.88 69.82 32 104.73 32C555.82 224 640 192 640 128c0-45.22-39.1-97.3-148.58-120.81z" />
+	</svg>
+</header>
+<h2 class="category-description">Clearance Items</h2>
+<p class="category-description">Gently used floor model sneakers and discontinued styles at our lowest prices of the year. Get 'em before they're gone!</p>
+<div class="container">
+	<!-- ITEM 1 -->
+	<div class="item">
+		<figure>
+			<img src="https://assets.codepen.io/t-1/maksim-larin-jZyacqaR4iI-unsplash.jpg" alt="a pair of blue and red ASICS sneakers">
+			<figcaption>Photo by Maksim Larin</figcaption>
+		</figure>
+		<h3>Asics</h3>
+		<p class="description">
+			Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides unique silhouette.</p>
+		<p class="price">$65 USD</p>
+		<p class="special">Free Shipping!</p>
+		<div class="product-details">
+			<div>
+				<label for="size-select">Size</label>
+				<select name="size" id="size-select">
+					<option value=""></option>
+					<option value="6">6</option>
+					<option value="6.5">6.5</option>
+					<option value="7" disabled>7</option>
+					<option value="7">7.5</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="9.5" disabled>9.5</option>
+					<option value="10">10</option>
+				</select>
+			</div>
+			<div>
+				<label for="color-select">Color</label>
+				<select name="color" id="color-select">
+					<option value=""></option>
+					<option value="blue">blue</option>
+					<option value="red">red</option>
+					<option value="black">black</option>
+				</select>
+			</div>
+			<div>
+				<label for="quantity-select">Quantity</label>
+				<select name="quantity" id="quantity-select">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</div>
+		<button id="btn-add" type="button">Add to Cart</button>
+	</div>
+
+	<!-- ITEM 2 -->
+	<div class="item">
+		<figure>
+			<img src="https://assets.codepen.io/t-1/daniel-storek-JM-qKEd1GMI-unsplash.jpg" alt="a pair of white Adidas sneakers with red and blue trim">
+			<figcaption>Photo by Daniel Storek</figcaption>
+		</figure>
+		<h3>Adidas</h3>
+		<p class="description">
+			Effortless comfortable full leather lining eye-catching unique detail to the toe low 'cut-away' sides clean and sleek.
+		</p>
+		<p class="price">$30 USD</p>
+		<p class="special">Low Stock!</p>
+		<div class="product-details">
+			<div>
+				<label for="size-select">Size</label>
+				<select class="form-select" name="size" id="size-select">
+					<option value=""></option>
+					<option value="6">6</option>
+					<option value="6.5" disabled>6.5</option>
+					<option value="7">7</option>
+					<option value="7">7.5</option>
+					<option value="8">8</option>
+					<option value="9">9</option>
+					<option value="9.5" disabled>9.5</option>
+					<option value="10" disabled>10</option>
+				</select>
+			</div>
+			<div>
+				<label for="color-select">Color</label>
+				<select name="color" id="color-select">
+					<option value=""></option>
+					<option value="olive">olive & black</option>
+					<option value="blue">blue & black</option>
+					<option value="pink">pink & black</option>
+				</select>
+			</div>
+			<div>
+				<label for="quantity-select">Quantity</label>
+				<select name="quantity" id="quantity-select">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</div>
+		<button type="button" id="btn-add">Add to Cart</button>
+	</div>
+
+	<!-- ITEM 3 -->
+	<div class="item">
+		<figure>
+			<img src="https://assets.codepen.io/t-1/felipepelaquim-6zO5VKogoZE-unsplash.jpg" alt="a New Balance sneaker in olive drab with a black logo">
+			<figcaption>Photo by felipepelaquim</figcaption>
+		</figure>
+		<h3>New Balance</h3>
+		<p class="description">
+			Suede fabric pointed toe stylish cut front low heel sharp on-trend toe point raised heel drop sides unique silhouette.
+		</p>
+		<p class="price">$45 USD</p>
+		<p class="special">Just One Left!</p>
+		<div class="product-details">
+			<div>
+				<label for="size-select">Size</label>
+				<select name="size" id="size-select">
+					<option value=""></option>
+					<option value="6">6</option>
+					<option value="6.5" disabled>6.5</option>
+					<option value="7" disabled>7</option>
+					<option value="7" disabled>7.5</option>
+					<option value="8" disabled>8</option>
+					<option value="9" disabled>9</option>
+					<option value="9.5" disabled>9.5</option>
+					<option value="10" disabled>10</option>
+				</select>
+			</div>
+			<div>
+				<label for="color-select">Color</label>
+				<select name="color" id="color-select">
+					<option value=""></option>
+					<option value="red-blue">white</option>
+					<option value="black" disabled>black</option>
+					<option value="green">green</option>
+				</select>
+			</div>
+			<div>
+				<label for="quantity-select">Quantity</label>
+				<select name="quantity" id="quantity-select">
+					<option value=""></option>
+					<option value="1">1</option>
+					<option value="2" disabled>2</option>
+					<option value="3" disabled>3</option>
+					<option value="4" disabled>4</option>
+					<option value="5" disabled>5</option>
+				</select>
+				<div>
+				</div>
+				<button type="button" id="btn-add">Add to Cart</button>
+			</div>
+		</div>
+    <script src="script.js"></script>
+  </body>
+</html>
