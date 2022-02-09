@@ -4,7 +4,6 @@
 
 html {
   font-size: 16px;
-  font-family: 'IBM Plex Mono', monospace;
   font-weight: 300;
   line-height: 1.25;
 }
@@ -13,7 +12,7 @@ html {
   background: radial-gradient(50% 50% at 50% 50%, rgba(123, 131, 126, 0.9) 0%, rgba(54, 75, 73, 0.9) 100%), #364b49;
   background-repeat: no-repeat;
   color: #FFF;
-  min-height: 120vh; /* allows room for scrolling to see parallax */
+  min-height: 120vh;
   height: 100%;
 }
 
@@ -81,13 +80,13 @@ html {
 }
 
 @media screen and (min-width: 40rem) {
-    .heading {
-        font-size: 2rem;
-        position: absolute;
-        left: 0;
-        top: 6rem;
-        z-index: 10; /* to be on top of grid */
-    }
+  .heading {
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: 6rem;
+    z-index: 10; /* to be on top of grid */
+  }
 }
 
 mark {
