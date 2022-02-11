@@ -1,29 +1,23 @@
-'use strict';
-///////////////////////////////////////
-// Global variables
-const header = document.querySelector('.header');
-const nav = document.querySelector('.nav')
-const section1 = document.querySelector('#section--1');
-const navHeight = nav.getBoundingClientRect().height;
-
-function stickyNav(entries) {
-  const [entry] = entries;
-
-  if(!entry.isIntersecting) {
-    nav.classList.add('sticky');
-  }
-  else {
-    nav.classList.remove('sticky');
-  }
-}
-
-const headerObserver = new IntersectionObserver(stickyNav, {
-  root: null,
-  threshold: 0,
-  rootMargin: `-${navHeight}px`,
-});
-
-headerObserver.observe(header);
+const header = document.querySelector("header");
+const sectionOne = document.querySelector(".home-intro");
 
 
+const sectionOneOptions = {
+  rootMargin:"-200px 0px 0px 0px"
+};
 
+const sectionOneObserver = new IntersectionObserver(function(
+  entries,
+  sectionOneObserver
+) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      header.classList.add("nav-scrolled");
+    } else {
+      header.classList.remove("nav-scrolled");
+    }
+  });
+},
+sectionOneOptions);
+
+sectionOneObserver.observe(sectionOne);
