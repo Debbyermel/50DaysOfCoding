@@ -14,3 +14,82 @@ body {
   min-height: 100vh;
   overflow: hidden;
 }
+
+
+
+.cloud-animation {
+  position: relative;
+  right: -25px;
+  top: -375px;
+  width: 100%;
+
+  svg {
+    position: absolute;
+    width: 300px;
+    @include breakpoint(tablet) {
+      right: 0;
+      width: 380px;
+    }
+  }
+}
+
+#cloud-1 {
+}
+
+#cloud-2 {
+
+}
+
+#tail {
+  animation: tail-move 1.8s ease-in-out infinite;
+  -webkit-animation: tail-move 1.8s ease-in-out infinite;
+}
+
+#eye {
+  animation: blink 5.8s infinite both;
+  -webkit-animation: blink 5.8s infinite both;
+}
+
+#planet {
+  transform: rotate(5deg);
+  transform-origin: center;
+  animation: float infinite 5s ease-in-out alternate;
+}
+
+
+@keyframes tail-move {
+  50%{
+    transform: translate(7rem, -5.5rem) rotate(15deg);
+    transform-origin: 0 0;
+  }
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+@keyframes cloudmove {
+  0% { transform: translateX(20%); }
+  50% { transform: translateX(55%); }
+  100% { transform: translateX(20%); }
+}
+
+@keyframes float {
+  from {
+    transform: translate(-3px, 3px)  rotate(3deg);
+  }
+   to {
+    transform: translate(3px, -3px)  rotate(-3deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
