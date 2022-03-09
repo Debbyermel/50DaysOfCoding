@@ -15,30 +15,18 @@ body {
   overflow: hidden;
 }
 
-
-
 .cloud-animation {
   position: relative;
   right: -25px;
   top: -375px;
   width: 100%;
-
-  svg {
-    position: absolute;
-    width: 300px;
-    @include breakpoint(tablet) {
-      right: 0;
-      width: 380px;
-    }
-  }
 }
 
-#cloud-1 {
+svg {
+  position: absolute;
+  width: 300px;
 }
 
-#cloud-2 {
-
-}
 
 #tail {
   animation: tail-move 1.8s ease-in-out infinite;
